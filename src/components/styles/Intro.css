@@ -1,0 +1,17 @@
+.two-column {
+    display: grid;
+    gap: 16px;
+}
+
+/* adding spacing */
+:where(.flow :not(:first-child)) {
+    /* outline: 4px solid rebeccapurple; */
+    margin-top: var(--flow-spacer, 1em);
+}
+
+@media (min-width: 50em) {
+    .two-column {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}

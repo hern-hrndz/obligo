@@ -1,0 +1,40 @@
+.two-column {
+    display: grid;
+    gap: 16px;
+}
+
+/* adding spacing */
+:where(.flow :not(:first-child)) {
+    /* outline: 4px solid rebeccapurple; */
+    margin-top: var(--flow-spacer, 1em);
+}
+
+.container-divider {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-image: radial-gradient(circle, var(--clr-gray-500), var(--clr-neutral-500)) 1;
+}
+
+.three-column {
+    display: grid;
+    gap: 16px;
+    grid-auto-flow: column;
+    text-align: center;
+    align-items: center;
+}
+
+.second-container-styling {
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 50em) {
+    .two-column {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
+    .three-column-mid {
+        display: None !important;
+    }
+}

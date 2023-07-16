@@ -2,7 +2,8 @@ import './App.css';
 import './index.css';
 
 import { Header } from './components/Header'
-import { Intro } from './components/Intro';
+import { Home } from './components/Home';
+import { Footer } from './components/Footer';
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -11,7 +12,8 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Intro />
+        <Home />
+        <Footer />
       </BrowserRouter>
     </>
   );
